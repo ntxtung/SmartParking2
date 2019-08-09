@@ -122,41 +122,41 @@ public class RootController implements Initializable {
         portStatus = false;
     }
 
-    private void start() {
-        Runnable RFIDrunner =
-                () -> {
-                    System.out.println(cancelled);
-                    System.out.println(portStatus);
-                    while (!cancelled && portStatus) {
-                        String s = "";
-                        try {
-                            s = mySerial.serialRead();
-                        } catch (Exception e) {
-                            btn_rfidStop.fire();
-                            System.err.println("RFID Disconnected");
-                        }
-                        if (s.length() > 0) {
-//                            System.out.println(s);
-                            String arr[] = s.split(" ");
-                            if (arr[0].equals("R0")) {
-                                if (trackingControllerLeft.getState() == 0) {
-                                    Platform.runLater(() -> {
-                                        trackingControllerLeft.setTextRFID(arr[1].replace(" ", ""));
-                                    });
-                                }
-                            } else if (arr[0].equals("R1")) {
-                                if (trackerControllerRight.getState() == 0) {
-                                    Platform.runLater(() -> {
-                                        trackerControllerRight.setTextRFID(arr[1].replace(" ", ""));
-                                    });
-                                }
-                            }
-                        }
-                    }
-                };
-        Thread RFIDThread = new Thread(RFIDrunner);
-        RFIDThread.start();
-    }
+//    private void start() {
+//        Runnable RFIDrunner =
+//                () -> {
+//                    System.out.println(cancelled);
+//                    System.out.println(portStatus);
+//                    while (!cancelled && portStatus) {
+//                        String s = "";
+//                        try {
+//                            s = mySerial.serialRead();
+//                        } catch (Exception e) {
+//                            btn_rfidStop.fire();
+//                            System.err.println("RFID Disconnected");
+//                        }
+//                        if (s.length() > 0) {
+////                            System.out.println(s);
+//                            String arr[] = s.split(" ");
+//                            if (arr[0].equals("R0")) {
+//                                if (trackingControllerLeft.getState() == 0) {
+//                                    Platform.runLater(() -> {
+//                                        trackingControllerLeft.setTextRFID(arr[1].replace(" ", ""));
+//                                    });
+//                                }
+//                            } else if (arr[0].equals("R1")) {
+//                                if (trackerControllerRight.getState() == 0) {
+//                                    Platform.runLater(() -> {
+//                                        trackerControllerRight.setTextRFID(arr[1].replace(" ", ""));
+//                                    });
+//                                }
+//                            }
+//                        }
+//                    }
+//                };
+//        Thread RFIDThread = new Thread(RFIDrunner);
+//        RFIDThread.start();
+//    }
 
     private void cancel() {
         cancelled = true;
