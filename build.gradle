@@ -1,0 +1,66 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+group 'SmartParking'
+version '2.0'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    /// Java Enterprise
+    // https://mvnrepository.com/artifact/javax.transaction/jta
+    compile group: 'javax.transaction', name: 'jta', version: '1.1'
+    // https://mvnrepository.com/artifact/javax.inject/javax.inject
+    compile group: 'javax.inject', name: 'javax.inject', version: '1'
+
+    /// Database Access
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager
+    compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.4.4.Final'
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.4.Final'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+
+    /// Application
+    // https://mvnrepository.com/artifact/com.jfoenix/jfoenix
+    compile group: 'com.jfoenix', name: 'jfoenix', version: '9.0.9'
+    // https://mvnrepository.com/artifact/com.gluonhq/ignite-spring
+    compile group: 'com.gluonhq', name: 'ignite-spring', version: '1.0.2'
+
+    /// Infrastructure
+    // https://mvnrepository.com/artifact/com.fazecast/jSerialComm
+    compile group: 'com.fazecast', name: 'jSerialComm', version: '2.5.1'
+    // https://mvnrepository.com/artifact/com.google.cloud/google-cloud-vision
+    compile group: 'com.google.cloud', name: 'google-cloud-vision', version: '0.5.1'
+}
+
+javafx {
+    version = "12"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'SmartParkingApp.MainApp'
+        )
+    }
+}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/java']
+        }
+        resources {
+            srcDirs = ['src/resources']
+        }
+    }
+}
+mainClassName = 'SmartParkingApp.MainApp'
+

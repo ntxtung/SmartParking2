@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="464.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SmartParkingApp.Controllers.TrackerConfigController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="424.0">
+               <children>
+                  <Label prefWidth="150.0" text="Lane Role" />
+                  <JFXComboBox fx:id="laneRole_combobox" prefHeight="28.0" prefWidth="250.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="424.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefWidth="150.0" text="Font camera source" />
+                  <JFXComboBox fx:id="comboFontCamera" prefHeight="28.0" prefWidth="250.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefWidth="150.0" text="Behind camera source" />
+                  <JFXComboBox fx:id="comboBehindCamera" prefHeight="28.0" prefWidth="250.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefWidth="150.0" text="Focus width" />
+                  <JFXSlider fx:id="focusWidth" blockIncrement="1.0" indicatorPosition="RIGHT" max="800.0" min="50.0" onDragDetected="#onChangeFocusConfigs" prefHeight="24.0" prefWidth="250.0" value="100.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefWidth="150.0" text="Focus height" />
+                  <JFXSlider fx:id="focusHeight" blockIncrement="1.0" indicatorPosition="RIGHT" max="600.0" min="50.0" onDragDetected="#onChangeFocusConfigs" prefHeight="24.0" prefWidth="250.0" value="100.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefWidth="150.0" text="Focus X position" />
+                  <JFXSlider fx:id="focusX" blockIncrement="1.0" max="700.0" onDragDetected="#onChangeFocusConfigs" prefHeight="24.0" prefWidth="250.0" value="100.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefWidth="150.0" text="Focus Y position" />
+                  <JFXSlider fx:id="focusY" blockIncrement="1.0" max="500.0" onDragDetected="#onChangeFocusConfigs" prefHeight="24.0" prefWidth="250.0" value="100.0" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+               <buttons>
+                  <JFXButton onAction="#onOkay" prefHeight="44.0" prefWidth="100.0" text="Okay" />
+                  <JFXButton onAction="#onCancel" prefHeight="44.0" prefWidth="100.0" text="Cancel" />
+               </buttons>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
