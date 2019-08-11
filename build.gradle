@@ -39,7 +39,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.google.cloud/google-cloud-vision
     compile group: 'com.google.cloud', name: 'google-cloud-vision', version: '0.5.1'
     
-    compile files('lib/opencv4/opencv-411.jar')
+    compile files('src/java/SmartParkingApp/Infrastructure/OpenCV/opencv-411.jar')
 
 
 }

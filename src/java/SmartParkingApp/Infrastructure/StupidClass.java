@@ -6,7 +6,7 @@ import org.opencv.core.Mat;
 
 public class StupidClass {
     public static void main(String[] args){
-        System.setProperty("java.library.path", "lib/opencv4/x64");
+        System.setProperty("java.library.path", "src/java/SmartParkingApp/Infrastructure/OpenCV/x64");
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 //        System.loadLibrary("opencv_java411");
         Mat mat = Mat.eye(3, 3, CvType.CV_8UC1);

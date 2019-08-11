@@ -4,13 +4,14 @@ package SmartParkingApp.Infrastructure.SoftwareSerial;
 import com.fazecast.jSerialComm.SerialPort;
 
 public class JSerialMainTest {
-    private static JSerial js3 = new JSerial("COM10", 9600);
+    private static JSerial js3 = new JSerial("COM8", 9600);
 
     public static void main(String[] agrs) {
         System.out.println(js3);
         SerialPort[] portNames = SerialPort.getCommPorts();
-        for (int i = 0; i < portNames.length; i++)
+        for (int i = 0; i < portNames.length; i++) {
             System.out.println(portNames[i].getSystemPortName());
+        }
 
         if (js3.openConnection()) {
             System.out.println("Open Successful");
