@@ -38,9 +38,11 @@ dependencies {
     compile group: 'com.fazecast', name: 'jSerialComm', version: '2.5.1'
     // https://mvnrepository.com/artifact/com.google.cloud/google-cloud-vision
     compile group: 'com.google.cloud', name: 'google-cloud-vision', version: '0.5.1'
-    
-    compile files('src/java/SmartParkingApp/Infrastructure/OpenCV/opencv-411.jar')
 
+    /// HungThuan things
+    compile files('src/java/SmartParkingApp/Infrastructure/OpenCV/opencv-411.jar')
+    // https://mvnrepository.com/artifact/com.victorlaerte/jfx-asynctask
+    compile group: 'com.victorlaerte', name: 'jfx-asynctask', version: '1.0.1'
 
 }
 

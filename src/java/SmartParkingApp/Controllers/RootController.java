@@ -1,4 +1,5 @@
 package SmartParkingApp.Controllers;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -7,6 +8,8 @@ import java.util.ResourceBundle;
 
 import SmartParkingApp.Application.UseCase.UserManagement.IUserManagementServices;
 import SmartParkingApp.Application.UseCase.VehicleManagement.IVehicleManagementServices;
+import SmartParkingApp.Controllers.Helper.DatetimeUpdater;
+import SmartParkingApp.Infrastructure.ImageProcess.ImageProcessing;
 import SmartParkingApp.Infrastructure.SoftwareSerial.JSerial;
 import SmartParkingApp.MainApp;
 import SmartParkingApp.Utilities.Constants;
@@ -73,6 +76,20 @@ public class RootController implements Initializable {
 
 //        trackingControllerLeft.setName("Left Tracking");
 //        trackerControllerRight.setName("Right Tracking");
+        // Image Processing
+//        ImageProcessing.getInstance();
+
+        // Controller Helper
+        DatetimeUpdater watcher = new DatetimeUpdater(lblTime);
+        watcher.setDaemon(true);
+        watcher.execute();
+
+        // Split later
+        choosePortComboBox.getSelectionModel().selectedItemProperty().addListener((options, oldValue, newValue) -> {
+                    btn_rfidConnect.setDisable(false);
+                }
+        );
+        this.refreshPortList();
     }
 
     @FXML
@@ -89,8 +106,12 @@ public class RootController implements Initializable {
     void onRFIDStopAction(ActionEvent event) {
 
     }
+
+    /// Split later
     private volatile Boolean portStatus;
     private volatile Boolean cancelled = false;
+
+
     private void refreshPortList() {
         choosePortComboBox.getItems().clear();
         portNames = new ArrayList<>(Arrays.asList(SerialPort.getCommPorts()));

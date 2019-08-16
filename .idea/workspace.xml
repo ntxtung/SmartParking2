@@ -2,23 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39bc9f82-3639-4105-8b80-43898ffcdf86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/Helper/DatetimeUpdater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/ImageProcess/CharacterBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/ImageProcess/DataPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/ImageProcess/ImageProcessing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/Infrastructure/SoftwareSerial/JSerialMainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/Infrastructure/SoftwareSerial/JSerialMainTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/Infrastructure/StupidClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/Infrastructure/StupidClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/opencv4/opencv-411.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/opencv4/x64/opencv_java411.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/opencv4/x86/opencv_java342.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/JSerialMainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/JSerialMainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/StupidClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/StupidClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/Controllers/RootController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/Controllers/RootController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/MainApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/Utilities/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/SmartParkingApp/Utilities/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/RootController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/SmartParkingApp/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/SmartParkingApp/Utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/SmartParkingApp/Utilities/Constants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -85,6 +92,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="org.ntxtung.smartparking" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="org.ntxtung.smartparking" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
@@ -116,20 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="41" column="65" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/JSerial.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="44" column="78" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -137,20 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/RootController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2448">
-              <caret line="125" column="31" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/StupidClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="345">
+              <caret line="90" column="10" lean-forward="true" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,10 +147,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/JSerialMainTest.java">
+        <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+            <state relative-caret-position="-735">
+              <caret line="241" column="37" lean-forward="true" selection-start-line="241" selection-start-column="37" selection-end-line="241" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerConfigController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-429">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/StupidClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,20 +179,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="48" column="63" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="63" />
+            <state relative-caret-position="288">
+              <caret line="35" selection-start-line="35" selection-end-line="36" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#0#9#1" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Utilities/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -232,9 +233,7 @@
         <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Application/UseCase/VehicleManagement/VehicleManagementServices.java" />
         <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Utilities/ControllerModule.java" />
         <option value="$PROJECT_DIR$/src/resources/Components/Empty.fxml" />
-        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Utilities/Constants.java" />
         <option value="$PROJECT_DIR$/src/resources/Components/Root.fxml" />
-        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/MainApp.java" />
         <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Application/UseCase/UserManagement/UserManagementServices.java" />
         <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Application/UseCase/UserManagement/IUserManagementServices.java" />
         <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/JSerial.java" />
@@ -242,10 +241,22 @@
         <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/RFIDHandler.java" />
         <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Application/Helper/RFIDHandler.java" />
         <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Application/Services/RFIDServices.java" />
-        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/RootController.java" />
         <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/JSerialMainTest.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/StupidClass.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/OpenCV/build.gradle" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Application/Helper/ImageProcessing.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Application/Helper/DataPacket.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Utilities/Constants.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/ImageProcess/CharacterBox.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Application/Helper/DatetimeUpdater.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Utilities/DatetimeUpdater.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/Helper/DatetimeUpdater.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/ImageProcess/ImageProcessing.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/RootController.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerConfigController.java" />
+        <option value="$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerController.java" />
       </list>
     </option>
   </component>
@@ -307,7 +318,16 @@
               <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="SmartParkingApp" type="462c0819:PsiDirectoryNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="UseCase" type="462c0819:PsiDirectoryNode" />
+              <item name="Helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org.ntxtung.smartparking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartParking2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SmartParkingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="org.ntxtung.smartparking" type="b2602c69:ProjectViewProjectNode" />
@@ -331,20 +351,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="SmartParkingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="Infrastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="ImageProcess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org.ntxtung.smartparking" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartParking2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="SmartParkingApp" type="462c0819:PsiDirectoryNode" />
               <item name="MainApp.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="org.ntxtung.smartparking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartParking2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="org.ntxtung.smartparking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartParking2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,7 +379,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/opencv4/x64/opencv_java411.dll" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/java/SmartParkingApp/Application/Helper" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -371,24 +387,25 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3848134" />
     <property name="settings.editor.selected.configurable" value="experimental" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\GITHUB\SmartParking2\src\java\SmartParkingApp\Infrastructure\SoftwareSerial" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="SmartParkingApp.Domain" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\GITHUB\SmartParking2\src\java\SmartParkingApp" />
       <recent name="E:\GITHUB\SmartParking2\src\main\resources\Images" />
       <recent name="E:\GITHUB\SmartParking2\src\main\resources\Components" />
       <recent name="E:\GITHUB\SmartParking2\src\main\resources" />
       <recent name="E:\GITHUB\SmartParking2\src\main\java\SmartParkingApp" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="SmartParkingApp.Domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GITHUB\SmartParking2\src\java\SmartParkingApp\Application\Helper" />
+      <recent name="E:\GITHUB\SmartParking2\src\java\SmartParkingApp\Infrastructure\SoftwareSerial" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -403,7 +420,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestChoi">
+  <component name="RunManager" selected="Gradle.SmartParking2 [run]">
     <configuration name="JSerialMainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SmartParkingApp.Infrastructure.SoftwareSerial.JSerialMainTest" />
       <module name="org.ntxtung.smartparking.main" />
@@ -498,9 +515,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SmartParking2 [clean]" />
         <item itemvalue="Application.StupidClass" />
         <item itemvalue="Application.JSerialMainTest" />
-        <item itemvalue="Gradle.SmartParking2 [clean]" />
         <item itemvalue="Application.MainApp" />
         <item itemvalue="Gradle.SmartParking2 [run]" />
       </list>
@@ -533,12 +550,12 @@
       <workItem from="1565353201524" duration="3484000" />
       <workItem from="1565363901813" duration="3010000" />
       <workItem from="1565454105848" duration="599000" />
-      <workItem from="1565498195263" duration="4967000" />
+      <workItem from="1565498195263" duration="13678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67526000" />
+    <option name="totallyTimeSpent" value="76237000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,7 +569,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4972145" visible="true" weight="0.17324094" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4972145" visible="true" weight="0.17324094" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -561,7 +578,7 @@
       <window_info id="Persistence" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3400223" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3400223" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910814" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -584,8 +601,8 @@
       <window_info anchor="right" id="Database" order="6" weight="0.18763326" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Gradle" order="9" visible="true" weight="0.21321961" />
-      <window_info anchor="right" id="Structure" order="10" sideWeight="0.5027855" weight="0.16684435" />
+      <window_info anchor="right" id="Gradle" order="9" weight="0.21321961" />
+      <window_info active="true" anchor="right" id="Structure" order="10" sideWeight="0.5027855" visible="true" weight="0.20522387" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,24 +613,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gradle/vcs-1/gc.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Styles/styles.css" />
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SmartParkingApp/Controllers/TrackerConfigController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/Components/Root.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/Components/TrackerConfig.fxml" />
@@ -626,20 +625,6 @@
     <entry file="file://$PROJECT_DIR$/src/SmartParkingApp/Controllers/TrackerConfigController.java" />
     <entry file="file://$PROJECT_DIR$/src/SmartParkingApp/Controllers/RootController.java" />
     <entry file="file://$PROJECT_DIR$/src/SmartParkingApp/MainApp.java" />
-    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerConfigController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/TestMain.java" />
     <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -742,13 +727,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/RFIDReader.java" />
-    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Application/Helper/RFIDHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Application/Services/RFIDServices.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -781,43 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/JSerial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/RootController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="125" column="31" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Utilities/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="48" column="63" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/JSerialMainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -825,20 +766,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/OpenCV/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Utilities/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="16" column="68" lean-forward="true" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/Helper/DatetimeUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/SoftwareSerial/JSerial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/ImageProcess/DataPacket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/ImageProcess/CharacterBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="41" column="65" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="65" />
+        <state relative-caret-position="408">
+          <caret line="44" column="78" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/OpenCV/opencv-411.jar!/org/opencv/core/Core.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="186" column="26" selection-start-line="186" selection-start-column="26" selection-end-line="186" selection-end-column="26" />
+          <folding>
+            <element signature="e#8372#8373#0" expanded="true" />
+            <element signature="e#8411#8412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/ImageProcess/ImageProcessing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="35" selection-start-line="35" selection-end-line="36" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#9#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Infrastructure/StupidClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="264">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Application/Helper/RFIDHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/RootController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="90" column="10" lean-forward="true" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="241" column="37" lean-forward="true" selection-start-line="241" selection-start-column="37" selection-end-line="241" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/SmartParkingApp/Controllers/TrackerConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-429">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -893,7 +952,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>org.ntxtung.smartparking</last-edited>
+          <last-edited>main|org.ntxtung.smartparking</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

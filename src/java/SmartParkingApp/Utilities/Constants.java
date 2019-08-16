@@ -1,5 +1,5 @@
 package SmartParkingApp.Utilities;
-
+import org.opencv.core.Size;
 public final class Constants {
     public final static String  APPLICATION_TITLE = "SMART PARKING V2.0 - HCM-IU - VNU";
 
@@ -13,10 +13,10 @@ public final class Constants {
     public final static String  FXML_TRACKER = "/Components/Tracker.fxml";
     public final static String  FXML_TRACKER_CONFIG = "/Components/TrackerConfig.fxml";
 
-//    public static final Size    PREDICTION_CHAR_SIZE = new Size(10,10);
+    public static final Size    PREDICTION_CHAR_SIZE = new Size(10,10);
     public static final String  TRAIN_CHARS_DIR = ".data/demo/char";
     public static final String  TRAIN_OUTPUT_DIR = "./trainedData.txt";
-//    public static final Size    PREPROCESSING_RESIZE_SIZE = new Size(800, 600);
+    public static final Size    PREPROCESSING_RESIZE_SIZE = new Size(800, 600);
     public static final int     THRESHOLD_BLOCK_SIZE = 95;
     public static final int     THRESHOLD_C = 0;
     public static final int     MORPHOLOGY_SIZE = 2;

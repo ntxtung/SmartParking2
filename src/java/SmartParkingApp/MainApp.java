@@ -33,6 +33,8 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
+        // Load dll
+        System.setProperty("java.library.path", "E:\\OpenCV4\\opencv\\build\\java\\x64");
         // Database
         Session session = HibernateUtils.getSessionFactory().openSession();
 //        Session session = SessionSingleton.getInstance();
@@ -44,6 +46,7 @@ public class MainApp extends Application {
         for (User user : list) {
             System.out.println(user.getFullname());
         }
+
         // JavaFX
         context.init();
         fxmlLoader.setLocation(getClass().getResource(Constants.FXML_ROOT));
