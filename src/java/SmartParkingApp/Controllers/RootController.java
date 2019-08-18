@@ -9,14 +9,12 @@ import java.util.ResourceBundle;
 import SmartParkingApp.Application.UseCase.UserManagement.IUserManagementServices;
 import SmartParkingApp.Application.UseCase.VehicleManagement.IVehicleManagementServices;
 import SmartParkingApp.Controllers.Helper.DatetimeUpdater;
-import SmartParkingApp.Infrastructure.ImageProcess.ImageProcessing;
 import SmartParkingApp.Infrastructure.SoftwareSerial.JSerial;
 import SmartParkingApp.MainApp;
 import SmartParkingApp.Utilities.Constants;
 import com.fazecast.jSerialComm.SerialPort;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -53,7 +51,7 @@ public class RootController implements Initializable {
 
     private ArrayList<SerialPort> portNames = new ArrayList<>();
     private JSerial mySerial = new JSerial();
-    private TrackerController trackingControllerLeft, trackerControllerRight;
+    private TrackerController_Deprecated trackingControllerLeft, trackerControllerDeprecatedRight;
     private Parent trackingFormLeft, trackingFormRight;
 
     @Override
@@ -65,7 +63,7 @@ public class RootController implements Initializable {
             trackingControllerLeft = leftLoader.getController();
 
             trackingFormRight = rightLoader.load();
-            trackerControllerRight = rightLoader.getController();
+            trackerControllerDeprecatedRight = rightLoader.getController();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -75,7 +73,7 @@ public class RootController implements Initializable {
         splitPane.getItems().add(trackingFormRight);
 
 //        trackingControllerLeft.setName("Left Tracking");
-//        trackerControllerRight.setName("Right Tracking");
+//        trackerControllerDeprecatedRight.setName("Right Tracking");
         // Image Processing
 //        ImageProcessing.getInstance();
 
@@ -166,9 +164,9 @@ public class RootController implements Initializable {
 //                                    });
 //                                }
 //                            } else if (arr[0].equals("R1")) {
-//                                if (trackerControllerRight.getState() == 0) {
+//                                if (trackerControllerDeprecatedRight.getState() == 0) {
 //                                    Platform.runLater(() -> {
-//                                        trackerControllerRight.setTextRFID(arr[1].replace(" ", ""));
+//                                        trackerControllerDeprecatedRight.setTextRFID(arr[1].replace(" ", ""));
 //                                    });
 //                                }
 //                            }

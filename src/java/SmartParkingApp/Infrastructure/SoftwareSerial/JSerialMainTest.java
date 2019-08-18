@@ -9,9 +9,11 @@ public class JSerialMainTest {
     public static void main(String[] agrs) {
         System.out.println(js3);
         SerialPort[] portNames = SerialPort.getCommPorts();
+        System.out.println("All available port: ");
         for (int i = 0; i < portNames.length; i++) {
             System.out.println(portNames[i].getSystemPortName());
         }
+        System.out.println("Try to open port: ");
 
         if (js3.openConnection()) {
             System.out.println("Open Successful");

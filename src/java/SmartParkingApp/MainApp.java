@@ -21,11 +21,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.List;
 import javax.inject.Inject;
 
 public class MainApp extends Application {
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 //    private SpringContext context = new SpringContext(this, () -> Arrays.asList(MainApp.class.getPackage().getName()));
     private SpringContext context = new SpringContext(this, () -> Arrays.asList(MainApp.class.getPackage().getName()));
     @Inject
@@ -67,6 +69,9 @@ public class MainApp extends Application {
         });
 
         primaryStage.show();
+    }
+    public static SimpleDateFormat getSimpleDateFormat() {
+        return sdf;
     }
 }
 

@@ -8,14 +8,8 @@ import java.util.Scanner;
 public class JSerial {
     private SerialPort comPort;
     private String portDescription;
-    private int baud_rate;
+    private int baud_rate = 9600;
 
-    /**
-     * Constructor
-     *
-     * @param portDescription
-     * @param baud_rate
-     */
     public JSerial(String portDescription, int baud_rate) {
         this.portDescription = portDescription;
         comPort = SerialPort.getCommPort(this.portDescription);
@@ -65,6 +59,7 @@ public class JSerial {
         try {
             Thread.sleep(5);
         } catch (Exception e) {
+            e.printStackTrace();
         }
         PrintWriter pout = new PrintWriter(comPort.getOutputStream());
         pout.print(s);

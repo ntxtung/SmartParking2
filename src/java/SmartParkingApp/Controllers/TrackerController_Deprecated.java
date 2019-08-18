@@ -1,7 +1,9 @@
 package SmartParkingApp.Controllers;
 
 import SmartParkingApp.Application.Helper.RFIDHandler;
+import SmartParkingApp.Controllers.Helper.EnterOutBtn;
 import SmartParkingApp.Domain.Vehicle;
+import SmartParkingApp.MainApp;
 import SmartParkingApp.Utilities.Constants;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
@@ -26,7 +28,7 @@ import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.concurrent.ScheduledExecutorService;
 
-public class TrackerController implements Initializable {
+public class TrackerController_Deprecated implements Initializable {
     private String name;
     private Image defaultImg = new Image("/" + Constants.DEFAULT_IMG_DIR);
     private Image defaultImg_plate = new Image("/" + Constants.DEFAULT_IMG_PLATE_DIR);
@@ -94,7 +96,7 @@ public class TrackerController implements Initializable {
     private JFXTextField txtRFID;
 
     @FXML
-    private JFXButton enterOutBtn;
+    private EnterOutBtn enterOutBtn;
 
     @FXML
     private JFXButton btn_cancel;
@@ -113,7 +115,7 @@ public class TrackerController implements Initializable {
             Stage stage = new Stage();
             stage.setResizable(false);
             stage.setScene(new Scene(configDialog));
-            TrackerConfigController configController = configLoader.getController();
+            TrackerConfigController_Deprecated configController = configLoader.getController();
             configController.setTrackingController(this);
             stage.setTitle(this.name + " configurate");
             stage.show();
@@ -161,8 +163,8 @@ public class TrackerController implements Initializable {
 
     public void changeToWaitingMode() {
         state = 0;
-        enterOutBtn_changeToYellow();
-
+//        enterOutBtn_changeToYellow();
+        this.enterOutBtn.changeToYellow();
         resetImg();
         currentVehicle = null;
         Platform.runLater(() -> {
@@ -180,96 +182,99 @@ public class TrackerController implements Initializable {
             lbl_parkingFee.setText("- VND");
 
             lbl_emotionVal.setStyle("-fx-text-fill: #212121");
-            emotionDetectService.reset();
+//            emotionDetectService.reset();
         });
     }
 
     public void changeToConfirm_EnterMode() {
         state = 1;
-        enterOutBtn_changeToGreen();
+//        enterOutBtn_changeToGreen();
+        this.enterOutBtn.changeToGreen();
         txtPlateNumber.setDisable(false);
         txtRFID.setDisable(true);
         btn_cancel.setDisable(false);
 
-        currentVehicle = new Vehicle(txtRFID.getText(), null, null, null, new Date());
+//        currentVehicle = new Vehicle(txtRFID.getText(), null, null, null, new Date());
 
-        timeIn = currentVehicle.getTimeIn();
+//        timeIn = currentVehicle.getTimeIn();
+        timeIn = currentVehicle.getRegisterTime();
         Platform.runLater(() -> {
 //            imgFont.setImage(imgCamFont.getImage());
 //            imgBack.setImage(imgCamBack.getImage());
 //            imgPlate.setImage(imgCamPlate.getImage());
 
-            lbl_checkInTime.setText(MainProgram.getSimpleDateFormat().format(timeIn));
+            lbl_checkInTime.setText(MainApp.getSimpleDateFormat().format(timeIn));
             lbl_parkingDuration.setText("0");
             lbl_parkingFee.setText("0 VND");
 
-            emotionDetectService.start();
+//            emotionDetectService.start();
         });
     }
 
     public void changeToConfirm_OutMode() {
-        state = 2;
-        enterOutBtn_changeToRed();
-        txtPlateNumber.setDisable(true);
-        txtRFID.setDisable(true);
-        btn_cancel.setDisable(false);
-
-        timeIn = currentVehicle.getTimeIn();
-        timeOut = new Date();
-
-        long duration = getDateDiff(currentVehicle.getTimeIn(), timeOut, TimeUnit.HOURS);
-
-        Platform.runLater(() -> {
-            imgFont.setImage(currentVehicle.getFrontImg());
-            imgBack.setImage(currentVehicle.getBackImg());
-            imgPlate.setImage(currentVehicle.getPlateImg());
-
-            txtPlateNumber.setText(currentVehicle.getPlateNumber());
-            lbl_checkInTime.setText(MainProgram.getSimpleDateFormat().format(timeIn));
-            lbl_checkOutTime.setText(MainProgram.getSimpleDateFormat().format(timeOut));
-            lbl_parkingDuration.setText(duration + " Hours");
-            lbl_parkingFee.setText(VehicleManage.getInstance().calculateParkingFee(duration) + " VND");
-
-            emotionDetectService.start();
-        });
+//        state = 2;
+////        enterOutBtn_changeToRed();
+//        this.enterOutBtn.changeToRed();
+//        txtPlateNumber.setDisable(true);
+//        txtRFID.setDisable(true);
+//        btn_cancel.setDisable(false);
+//
+//        timeIn = currentVehicle.getTimeIn();
+//        timeOut = new Date();
+//
+//        long duration = getDateDiff(currentVehicle.getTimeIn(), timeOut, TimeUnit.HOURS);
+//
+//        Platform.runLater(() -> {
+//            imgFont.setImage(currentVehicle.getFrontImg());
+//            imgBack.setImage(currentVehicle.getBackImg());
+//            imgPlate.setImage(currentVehicle.getPlateImg());
+//
+//            txtPlateNumber.setText(currentVehicle.getPlateNumber());
+//            lbl_checkInTime.setText(MainProgram.getSimpleDateFormat().format(timeIn));
+//            lbl_checkOutTime.setText(MainProgram.getSimpleDateFormat().format(timeOut));
+//            lbl_parkingDuration.setText(duration + " Hours");
+//            lbl_parkingFee.setText(VehicleManage.getInstance().calculateParkingFee(duration) + " VND");
+//
+//            emotionDetectService.start();
+//        });
     }
 
     @FXML
     void enterOutBtn_onAction(ActionEvent event) {
         if (state == 0) {
-            System.out.println(this.name + " input RFID: " + txtRFID.getText());
-            enterOutBtn.setText("...");
-            currentVehicle = VehicleManage.getInstance().getVehicleByRfidFromParkingList(txtRFID.getText());
-            if (currentVehicle != null) {
-                if (role == 0 || role == 2) {
-                    changeToConfirm_OutMode();
-                } else {
-                    changeToWaitingMode();
-                }
-            } else {
-                if (role == 0 || role == 1) {
-                    changeToConfirm_EnterMode();
-                } else {
-                    changeToWaitingMode();
-                }
-            }
+//            System.out.println(this.name + " input RFID: " + txtRFID.getText());
+//            enterOutBtn.setText("...");
+//            currentVehicle = VehicleManage.getInstance().getVehicleByRfidFromParkingList(txtRFID.getText());
+//            if (currentVehicle != null) {
+//                if (role == 0 || role == 2) {
+//                    changeToConfirm_OutMode();
+//                } else {
+//                    changeToWaitingMode();
+//                }
+//            } else {
+//                if (role == 0 || role == 1) {
+//                    changeToConfirm_EnterMode();
+//                } else {
+//                    changeToWaitingMode();
+//                }
+//            }
         } else if (state == 1) {
-            currentVehicle.setPlateNumber(txtPlateNumber.getText());
-            currentVehicle.setFrontImg(imgFont.getImage());
-            currentVehicle.setBackImg(imgBack.getImage());
-            currentVehicle.setPlateImg(imgPlate.getImage());
-            currentVehicle.setEmotionIn(detecedEmotion);
-            VehicleManage.addVehicle(currentVehicle);
-            System.out.println(currentVehicle + " IN");
-            enterOutBtn.setText("...");
-            changeToWaitingMode();
+//            currentVehicle.setPlateNumber(txtPlateNumber.getText());
+//            currentVehicle.setFrontImg(imgFont.getImage());
+//            currentVehicle.setBackImg(imgBack.getImage());
+//            currentVehicle.setPlateImg(imgPlate.getImage());
+//            currentVehicle.setEmotionIn(detecedEmotion);
+//            VehicleManage.addVehicle(currentVehicle);
+//            System.out.println(currentVehicle + " IN");
+//            enterOutBtn.setText("...");
+//            changeToWaitingMode();
         } else if (state == 2) {
-            currentVehicle.changeStatusToLeft();
-            currentVehicle.setEmotionOut(detecedEmotion);
-            VehicleManage.getInstance().moveVehicleToOtherList(currentVehicle);
-            System.out.println(currentVehicle + " OUT");
-            enterOutBtn.setText("...");
-            changeToWaitingMode();
+//            currentVehicle.changeStatusToLeft();
+//            currentVehicle.setEmotionOut(detecedEmotion);
+//            VehicleManage.getInstance().moveVehicleToOtherList(currentVehicle);
+//            System.out.println(currentVehicle + " OUT");
+//            enterOutBtn.setText("...");
+//            changeToWaitingMode();
         }
     }
 
@@ -290,5 +295,12 @@ public class TrackerController implements Initializable {
 //		      }
 
         }
+    }
+    private void resetImg() {
+        Platform.runLater(() -> {
+            imgBack.setImage(defaultImg);
+            imgFont.setImage(defaultImg);
+            imgPlate.setImage(defaultImg_plate);
+        });
     }
 }
